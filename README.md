@@ -33,7 +33,7 @@ This folder contains the design files for a Pi Pico (W) hat that makes connectin
 
 > Servos: https://www.adafruit.com/product/155
 
-> Laser Diodes: https://www.amazon.com/gp/product/B088PQQ9XV/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1
+> Laser Diodes: https://www.amazon.com/gp/product/B088PQQ9XV/
 
 ## Instructions
 
