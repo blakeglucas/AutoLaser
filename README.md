@@ -2,6 +2,8 @@
 
 An automatic laser pointer mover for your cat!
 
+![Alt text](./images/profile.jpg?raw=true)
+
 ## Folders
 
 ### 3D
