@@ -1,5 +1,4 @@
 from machine import Pin, PWM
-import time
 import uasyncio
 
 SERVO_MIN_DUTY = 0.2
@@ -24,7 +23,8 @@ class ServoDriver(object):
             self.pct_min = min(pct_range)
         self.ctrl_pwm = PWM(Pin(pin, mode=Pin.OUT))
         self.ctrl_pwm.freq(SERVO_FREQ)
-        self.duty_pct(50)
+        # Home over time--instant torque breaks ServoShaft frequently
+        uasyncio.run_until_complete(self.move(50, 3))
 
     def duty_pct(self, pct: float):
         if pct > self.pct_max:
